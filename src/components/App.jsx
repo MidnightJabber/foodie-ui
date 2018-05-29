@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Landing from 'components/Landing/Landing';
+import Header from 'components/Header';
 // import { Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <Landing />
+        <Header />
       </div>
     );
   }
