@@ -1,0 +1,48 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/foodie-bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    .landing-content {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 800px;
+        height: 300px;
+
+        .landing-heading {
+            font-size: 56px;
+            font-weight: 600;
+        }
+
+        .landing-body {
+            font-size: 18px;
+            width: 600px;
+        }
+
+        .landing-button-container {
+            display: flex;
+            width: 700px;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+    }
+    
+    .landing-logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+
+        .landing-logo {
+            height: 35px;
+        }
+    }
+}

@@ -67,6 +67,7 @@ module.exports = {
 
   resolve: {
     alias: {
+      strings: path.resolve(__dirname, 'src/assets/strings'),
       components: path.resolve(__dirname, 'src/components'),
       state: path.resolve(__dirname, 'src/state'),
       styles: path.resolve(__dirname, 'src/components/styles'),
