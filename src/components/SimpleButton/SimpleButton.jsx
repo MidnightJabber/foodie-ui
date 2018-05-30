@@ -12,11 +12,9 @@ class SimpleButton extends Component {
 
   render() {
     return (
-      <div className="simplebutton">
-        <div className="simplebutton-title">
-          { this.props.title }
-        </div>
-      </div>
+      <a href="https://gph.is/1sD7JH3" className="simplebutton">
+        { this.props.title }
+      </a>
     );
   }
 }
