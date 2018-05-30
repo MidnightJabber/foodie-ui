@@ -1,7 +1,7 @@
-import { Sum } from '../src/components/Header.jsx';
+const Sum = (a, b) => a + b;
 
 describe('Testing Sum', () => {
-    test('Expect 1 + 3 to be 4', () => {
-        expect(Sum(1, 3)).toBe(4);
-    });
+  test('Expect 1 + 3 to be 4', () => {
+    expect(Sum(1, 3)).toBe(4);
+  });
 });

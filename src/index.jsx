@@ -10,7 +10,7 @@ import store from './store';
 import App from './components/App';
 import './base.scss';
 
-const render = Component => {
+const render = (Component) => {
   ReactDOM.render(
     <Provider store={store}>
       <Router>
@@ -19,7 +19,7 @@ const render = Component => {
         </AppContainer>
       </Router>
     </Provider>,
-    document.getElementById('content')
+    document.getElementById('content'),
   );
 };
 
