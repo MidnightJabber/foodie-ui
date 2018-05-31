@@ -4,8 +4,7 @@
     color: white;
     height: 100%;
     width: 100%;
-    // TODO: related issue: https://github.com/MidnightJabber/foodie-ui/issues/12
-    // background-image: url('../../assets/images/foodie-bg2.png');
+    background-image: url('~images/foodie-bg2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -36,7 +35,7 @@
             align-content: center;
         }
     }
-    
+
     .landing-logo-box {
         position: absolute;
         top: 40px;

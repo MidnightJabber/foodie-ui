@@ -2,12 +2,11 @@ import React from 'react';
 
 import SimpleButton from 'components/SimpleButton/SimpleButton';
 
-import FoodieBG from 'images/foodie-bg2.png';
 import Resources from './LandingResources';
 import './Landing.scss';
 
 const Landing = () => (
-  <div className="landing" style={{ backgroundImage: `url(${FoodieBG})` }}>
+  <div className="landing">
     <div className="landing-content">
       <div className="landing-heading">
         { Resources.Content.header }
