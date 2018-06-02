@@ -1,8 +1,10 @@
+@import '~assets/scss/colors';
+
 .header {
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    background: #44318D;
+    background: $colors-purple;
     padding: 10px 30px;
 
     .header-user-circle {

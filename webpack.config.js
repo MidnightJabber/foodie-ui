@@ -70,7 +70,7 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       state: path.resolve(__dirname, 'src/state'),
-      styles: path.resolve(__dirname, 'src/components/styles'),
+      assets: path.resolve(__dirname, 'src/assets'),
       images: path.resolve(__dirname, 'src/assets/images'),
     },
     extensions: ['.js', '.jsx'],
