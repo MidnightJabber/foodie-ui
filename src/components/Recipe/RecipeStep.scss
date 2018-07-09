@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+.recipe-step {
+  padding: 1em 3em;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+
+  .recipe-step-continer {
+    width: fit-content;
+  }
+
+  .recipe-step-title {
+    font-size: 1.6em;
+  }
+
+  .recipe-step-description {
+    font-size: 0.9em;
+    max-width: 30em;
+  }
+}
