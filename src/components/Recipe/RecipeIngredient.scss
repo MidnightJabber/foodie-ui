@@ -1,25 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 .recipeingredient {
+  display: flex;
+  height: 3em;
+  background-color: #e7e6e6;
+  border-radius: 1.5em;
 
-    display: flex;
-    height: 3em;
-    background-color: #e7e6e6;
-    border-radius: 1.5em;
+  .recipeingredient-image-container {
+    width: 20%;
+    align-self: center;
+    overflow: hidden;
+  }
 
-    .recipeingredient-image-container {
-        width: 20%;
-        align-self: center;
-        overflow: hidden;
-    }
+  .recipeingredient-image {
+    width: 90%;
+  }
 
-    .recipeingredient-image {
-        width: 90%;
-    }
+  .recipeingredient-title {
+    align-self: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+  }
 
-    .recipeingredient-title {
-        align-self: center;
-        font-family: 'Roboto Slab', serif;
-        font-size: 1em;
-    }
+  .recipeingedient-measurement {
+    flex-grow: 100;
+    text-align: end;
+    align-self: center;
+    font-size: 1.5em;
+    padding-right: 0.85em;
+    color: #807c7c;
+
+      > span {
+        font-size: 0.6em;
+      }
+  }
 }

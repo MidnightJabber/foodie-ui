@@ -9,7 +9,6 @@ import RecipeIngredient from './RecipeIngredient';
 
 import './Recipe.scss';
 
-
 class Recipe extends Component {
   state = {
     title: 'Chicken Keema Spaghetti',
@@ -23,30 +22,44 @@ class Recipe extends Component {
       {
         title: 'Chicken',
         image: EatenApple,
+        quantity: 250,
+        unit: 'g',
       },
       {
         title: 'Onion',
         image: EatenApple,
+        quantity: 35,
+        unit: 'g',
       },
       {
         title: 'Green Chilli',
         image: EatenBanana,
+        quantity: 25,
+        unit: 'g',
       },
       {
         title: 'Turmeric',
         image: EatenApple,
+        quantity: 1,
+        unit: 'tbsp',
       },
       {
         title: 'Salt',
         image: EatenBanana,
+        quantity: 3,
+        unit: 'tbsp',
       },
       {
         title: 'Black Pepper',
         image: EatenBanana,
+        quantity: 2,
+        unit: 'tbsp',
       },
       {
         title: 'Tomato puree',
         image: EatenBanana,
+        quantity: 150,
+        unit: 'g',
       },
     ],
   };
@@ -62,10 +75,17 @@ class Recipe extends Component {
   )
 
   getIngredients = () => (
-    this.state.ingredients.map(({ image, title }) => (
+    this.state.ingredients.map(({
+      image,
+      title,
+      quantity,
+      unit,
+    }) => (
       <RecipeIngredient
         title={title}
         image={image}
+        quantity={quantity}
+        unit={unit}
       />
     ))
   )
