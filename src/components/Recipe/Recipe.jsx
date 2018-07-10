@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import EatenBanana from 'images/ingredients/eaten-banana.png';
 import EatenApple from 'images/ingredients/eaten-apple.png';
+import Like from 'components/Like/Like';
 import RecipeHeader from './RecipeHeader';
 import RecipeStep from './RecipeStep';
 import RecipeIngredients from './RecipeIngredients';
@@ -12,6 +13,8 @@ import './Recipe.scss';
 class Recipe extends Component {
   state = {
     title: 'Chicken Keema Spaghetti',
+    authorName: 'Vishrut Reddi',
+    authorImage: 'https://pbs.twimg.com/profile_images/738617909153390593/jVbWhQCd_400x400.jpg',
     image: 'https://i.ytimg.com/vi/4oe74chByjY/maxresdefault.jpg',
     description: 'Supremely spicy with layers of earthy undertones, this Indian-influenced ground chicken makes for one delicious and complexly flavored minced meat that perfeclty blends with spaghetti.',
     recipeSteps: [
@@ -93,8 +96,15 @@ class Recipe extends Component {
   render = () => (
     <div className="recipe">
       <div className="recipe-content">
-        <RecipeHeader image={this.state.image} />
-        <div className="recipe-title">{this.state.title}</div>
+        <RecipeHeader
+          image={this.state.image}
+          authorImage={this.state.authorImage}
+          authorName={this.state.authorName}
+        />
+        <div className="recipe-title-container">
+          <div className="recipe-title">{this.state.title}</div>
+          <Like />
+        </div>
         <div className="recipe-description">{this.state.description}</div>
         <RecipeIngredients>
           {this.getIngredients()}

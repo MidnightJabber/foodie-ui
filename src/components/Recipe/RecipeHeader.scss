@@ -1,7 +1,12 @@
-.recipe-header {
-    width: 100%;
-    height: 18em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.recipeheader {
+  width: 100%;
+  height: 18em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .recipeheader-userchip-container {
+    float: right;
+    margin: 1em 1em;
+  }
 }

@@ -13,10 +13,15 @@
     height: 100%;
     background-color: #f5f2f2;
 
-    .recipe-title {
+    .recipe-title-container {
+      display: flex;
+      justify-content: flex-start;
       padding: 1em;
-      font-size: 3em;
-      font-family: 'Roboto Slab', serif;
+
+      .recipe-title {
+        font-size: 3em;
+        font-family: 'Roboto Slab', serif;
+      }
     }
 
     .recipe-description {
