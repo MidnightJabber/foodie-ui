@@ -1,0 +1,54 @@
+.like-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  line-height: 1;
+  font-size: 1em;
+  color: #7c8a94;
+
+  &:focus {
+    outline:0;
+  }
+
+  .like-area {
+    cursor: pointer;
+    border: 0em;
+    outline: none;
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    z-index: 100;
+    background-color: transparent;
+    margin-left: 2em;
+    background-position: left center;
+
+    &:hover + .like-heart {
+      background-position: right center !important;
+      color:#e02a50;
+    }
+  }
+
+  .like-heart {
+    height: 4em;
+    width: 4em;
+    background-image:url('../../assets/images/like_animation.png');
+    background-position: left;
+    background-repeat:no-repeat;
+    background-size:2900%;
+  }
+
+  .like-count {
+    margin-left: -1em;
+  }
+}
+
+.is_animating {
+  animation: heart-burst .8s steps(28) 1;
+}
+
+@keyframes heart-burst {
+  from {background-position:left;}
+  to { background-position:right;}
+}

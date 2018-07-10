@@ -1,0 +1,2 @@
+# foodie-ui [![Build Status](https://travis-ci.org/MidnightJabber/foodie-ui.svg?branch=develop)](https://travis-ci.org/MidnightJabber/foodie-ui) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1dd310490c9c4b35be9f54c8e6d6ece5)](https://app.codacy.com/app/MidnightJabber/foodie-ui?utm_source=github.com&utm_medium=referral&utm_content=MidnightJabber/foodie-ui&utm_campaign=badger)
+🍩 Explore recipes that you can make
