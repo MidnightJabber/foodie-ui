@@ -1,31 +1,84 @@
+@import '~assets/scss/colors';
+
 .landing {
     display: flex;
-    justify-content: center;
-    color: white;
     height: 100%;
     width: 100%;
-    background-image: url('~images/foodie-bg2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+
+    .landing-header {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        padding: 1em;
+        z-index: 2;
+
+        .landing-header-logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            align-self: center;
+            color: rgb(61, 60, 60);
+        }
+
+        .landing-header-auth-container {
+            display: flex;
+            width: 20em;
+            justify-content: space-evenly;
+        }
+    }
 
     .landing-content {
-        margin-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 800px;
-        height: 300px;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
 
-        .landing-heading {
-            font-size: 56px;
-            font-weight: 600;
+        .landing-form-container-signup {
+            background: linear-gradient(to right, white, #65b9f3);
+            height: 100%;
+            width: 50em;
+            align-self: flex-end;
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .form {
+                margin-top: 15em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: fit-content;
+            }
         }
+        .landing-form-container-login {
+            align-self: flex-end;
+            background: linear-gradient(to right, white, #ff9800);
+            height: 100%;
+            width: 50em;
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
-        .landing-body {
-            font-size: 18px;
-            width: 600px;
+            .form {
+                margin-top: 15em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                width: fit-content;
+            }
         }
 
         .landing-button-container {
@@ -33,16 +86,6 @@
             width: 700px;
             justify-content: space-evenly;
             align-content: center;
-        }
-    }
-
-    .landing-logo-box {
-        position: absolute;
-        top: 40px;
-        left: 40px;
-
-        .landing-logo {
-            height: 35px;
         }
     }
 }

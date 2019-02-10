@@ -1,16 +1,16 @@
 @import '~assets/scss/colors';
 
 .search-box {
-    $input-font-size: 30px;
-    $input-line-height: 70px;
+    $input-font-size: 1.5em;
+    $input-line-height: 5em;
     $font-family: Roboto Slab, sans-serif;
 
     position: relative;
-    width: 500px;
-    margin: 50px auto;
+    width: 25em;
+    margin: 2em auto;
 
     input {
-        height: 60px;
+        height: 2em;
         width: 100%;
         min-width: 100%;
         padding: 0;
@@ -21,16 +21,16 @@
         font-size: $input-font-size;
         border: none;
         outline: none;
-        border-bottom: 3px solid $colors-light-gray-0;
+        border-bottom: 0.1em solid $colors-light-gray-0;
         font-family: $font-family;
 
-        ::placeholder {
-            color: $colors-light-gray-1;
+        &::placeholder {
+            color: $colors-light-gray-1-90p;
         }
 
         &:focus {
             + .input-highlight {
-                border-top: 3px solid $colors-light-purple;
+                border-top: 0.1em solid $colors-green;
             }
         }
     }

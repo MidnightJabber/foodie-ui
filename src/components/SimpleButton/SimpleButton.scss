@@ -1,9 +1,29 @@
+@import '~assets/scss/colors';
+
 .simplebutton {
     display: flex;
+    color: $colors-green;
+    height: auto;
+    border: 2px solid $colors-green;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    background: white;
+
+    width: auto;
+    font-size: 18px;
+    font-weight: 550;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 
     &:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        cursor: pointer;
     }
 
     &:active {
@@ -11,30 +31,13 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     }
 
-    &:link,
-    &:visited {
-        color: white;
-        height: 30px;
-        width: 150px;
-        border: 2px solid white;
-        text-decoration: none;
-        padding: 15px 40px;
-        display: inline-block;
-        border-radius: 100px;
-        transition: all .2s;
-        position: relative;
-
-        width: auto;
-        font-size: 24px;
-        font-weight: 550;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-
     &:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
+    }
+
+    &:focus {
+        outline: 0;
     }
 
     &:after {

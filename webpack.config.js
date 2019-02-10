@@ -70,8 +70,10 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       state: path.resolve(__dirname, 'src/state'),
+      mutations: path.resolve(__dirname, 'src/mutations'),
       assets: path.resolve(__dirname, 'src/assets'),
       images: path.resolve(__dirname, 'src/assets/images'),
+      queries: path.resolve(__dirname, 'src/queries'),
     },
     extensions: ['.js', '.jsx'],
   },

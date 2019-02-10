@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './SearchBox.scss';
+import './HighlightTextBox.scss';
 
-class SearchBox extends Component {
+class HighlightTextBox extends Component {
   state = {
     value: '',
   };
 
-  onInputChange = ({ target: { value } }) => this.setState({ value });
+  onInputChange = ({ target: { value } }) => {
+    const { onValueChange } = this.props;
+
+    onValueChange(value);
+    this.setState({ value });
+  };
 
   render = () => {
     const { value } = this.state;
-    const { placeholder } = this.props;
+    const { placeholder, inputType } = this.props;
 
     return (
       <div className="search-box">
@@ -19,6 +24,7 @@ class SearchBox extends Component {
           onChange={this.onInputChange}
           placeholder={placeholder}
           value={value}
+          type={inputType}
           spellCheck={false}
         />
         <span className="input-highlight">
@@ -29,12 +35,16 @@ class SearchBox extends Component {
   }
 }
 
-SearchBox.propTypes = {
+HighlightTextBox.propTypes = {
   placeholder: PropTypes.string,
+  inputType: PropTypes.string,
+  onValueChange: PropTypes.func,
 };
 
-SearchBox.defaultProps = {
+HighlightTextBox.defaultProps = {
   placeholder: '',
+  inputType: 'text',
+  onValueChange: () => null,
 };
 
-export default SearchBox;
+export default HighlightTextBox;
