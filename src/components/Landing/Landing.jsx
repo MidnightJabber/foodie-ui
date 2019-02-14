@@ -9,6 +9,9 @@ import signupMutation from 'mutations/signup';
 import loginMutation from 'mutations/login';
 import * as foodTray1 from 'assets/images/FoodTray1.svg';
 import * as foodTray2 from 'assets/images/FoodTray2.svg';
+// import * as model1 from 'assets/images/landing/Model1Running.png';
+import * as model2 from 'assets/images/landing/Model2.png';
+import * as smoke from 'assets/images/landing/AnimatedSmoke.gif';
 
 import Resources from './LandingResources';
 import './Landing.scss';
@@ -104,6 +107,12 @@ class Landing extends Component {
       <div className="landing-content">
         { this.getLoginForm() }
         { this.getSignupForm() }
+        <div className="landing-content-text-container">
+          <div className="title">Fitness starts with what you eat.</div>
+          <div className="description">Take control of your goals. Track calories, breakdown ingredients, and log activities with MyFitnessPal.</div>
+        </div>
+        <img className="landing-content-image" alt="" src={smoke} />
+        <img className="landing-content-image" alt="" src={model2} />
       </div>
     </div>
   )

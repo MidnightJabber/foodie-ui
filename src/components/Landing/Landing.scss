@@ -31,12 +31,31 @@
 
     .landing-content {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
         align-items: center;
         height: 100%;
         width: 100%;
         z-index: 1;
+
+        .landing-content-image {
+            position: fixed;
+            display: block;
+            right: 0em;
+            bottom: 0em;
+            height: 92vh;
+            
+        }
+
+        .landing-content-text-container {
+            justify-self: flex-start;
+            padding: 5em;
+            width: 30em;
+            .title {
+                font-size: 4em;
+                font-weight: 500;
+            }
+
+        }
 
         .landing-form-container-signup {
             background: linear-gradient(to right, white, #65b9f3);
