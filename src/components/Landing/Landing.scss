@@ -57,30 +57,8 @@
 
         }
 
-        .landing-form-container-signup {
-            background: linear-gradient(to right, white, #65b9f3);
-            height: 100%;
-            width: 50em;
+        .landing-form-container {
             align-self: flex-end;
-            overflow-y: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .form {
-                margin-top: 15em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            button {
-                width: fit-content;
-            }
-        }
-        .landing-form-container-login {
-            align-self: flex-end;
-            background: linear-gradient(to right, white, #ff9800);
             height: 100%;
             width: 50em;
             overflow-y: hidden;
@@ -89,8 +67,11 @@
             justify-content: space-between;
 
             .form {
+                z-index: 1;
                 margin-top: 15em;
+                margin-left: 5em;
                 display: flex;
+                align-self: flex-start;
                 flex-direction: column;
                 align-items: center;
             }

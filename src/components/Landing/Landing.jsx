@@ -7,8 +7,6 @@ import HighlightTextBox from 'components/HighlightTextBox/HighlightTextBox';
 import currentUserQuery from 'queries/currentUser';
 import signupMutation from 'mutations/signup';
 import loginMutation from 'mutations/login';
-import * as foodTray1 from 'assets/images/FoodTray1.svg';
-import * as foodTray2 from 'assets/images/FoodTray2.svg';
 // import * as model1 from 'assets/images/landing/Model1Running.png';
 import * as model2 from 'assets/images/landing/Model2.png';
 import * as smoke from 'assets/images/landing/AnimatedSmoke.gif';
@@ -61,13 +59,12 @@ class Landing extends Component {
 
     if (showLoginForm) {
       return (
-        <div className="landing-form-container-login">
+        <div className="landing-form-container">
           <div className="form">
             <HighlightTextBox placeholder="Email" onValueChange={email => this.setState({ email })} />
             <HighlightTextBox placeholder="Password" inputType="password" onValueChange={password => this.setState({ password })} />
             <SimpleButton title={Resources.Button.ready} onBtnClick={this.onReadyBtnClick} />
           </div>
-          <img className="image" alt="" src={foodTray2} />
         </div>
       );
     }
@@ -80,14 +77,13 @@ class Landing extends Component {
 
     if (showSignupForm) {
       return (
-        <div className="landing-form-container-signup">
+        <div className="landing-form-container">
           <div className="form">
             <HighlightTextBox placeholder="Email" onValueChange={email => this.setState({ email })} />
             <HighlightTextBox placeholder="Password" inputType="password" onValueChange={password => this.setState({ password })} />
             <HighlightTextBox placeholder="Confirm password" inputType="password" />
             <SimpleButton title={Resources.Button.ready} onBtnClick={this.onReadyBtnClick} />
           </div>
-          <img className="image" alt="" src={foodTray1} />
         </div>
       );
     }
