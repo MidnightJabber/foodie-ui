@@ -66,6 +66,7 @@ module.exports = {
       mutations: path.resolve(__dirname, 'src/mutations'),
       assets: path.resolve(__dirname, 'src/assets'),
       images: path.resolve(__dirname, 'src/assets/images'),
+      utils: path.resolve(__dirname, 'src/utils'),
       queries: path.resolve(__dirname, 'src/queries'),
     },
     extensions: ['.js', '.jsx'],
