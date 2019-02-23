@@ -1,14 +1,7 @@
 /* global require, module, __dirname */
 
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackTemplate = require('html-webpack-template');
-const webpack = require('webpack');
-
-const CopyWebpackPlugin = require('copy-webpack-plugin'); // Copy assets to /dist
 
 module.exports = {
   entry: {
@@ -77,29 +70,4 @@ module.exports = {
     },
     extensions: ['.js', '.jsx'],
   },
-
-  devServer: {
-    contentBase: './dist',
-    historyApiFallback: true,
-    hot: true,
-    overlay: true,
-  },
-
-  plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new CopyWebpackPlugin([{ from: './src/assets/images', to: 'assets/images' }]),
-    new HtmlWebpackPlugin({
-      title: 'Output Management',
-      inject: false,
-      chunks: ['app'],
-      template: HtmlWebpackTemplate,
-      appMountId: 'content',
-    }),
-    new ExtractTextPlugin('styles.css'),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new Dotenv({
-      path: './.env',
-    }),
-  ],
 };
